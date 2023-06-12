@@ -15,9 +15,9 @@ namespace LoginAndRegister.Pages.registrationForm
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
-        
+
         public WebForm1()
         {
             // Retrieve the connection string from the web.config file
@@ -25,7 +25,8 @@ namespace LoginAndRegister.Pages.registrationForm
         }
         protected void registrationFormSubmitButton_Click(object sender, EventArgs e)
         {
-            
+
 
         }
+    }
 }

@@ -31,6 +31,7 @@ namespace DAL
                     connection.Close();
 
                 }
+                catch (Exception ex) { }
             }
         }
     }
