@@ -12,7 +12,7 @@ namespace DAL
             // Retrieve the connection string from the web.config file
             connectionString = ConfigurationManager.ConnectionStrings["LoginRegister"].ConnectionString;
         }
-        public void Register(string firstName, string lastName, string userName, string password, string confirmPassowrd, string email, string mobile, string gender)
+        public void Register(User user)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -20,16 +20,18 @@ namespace DAL
                              VALUES (@userId, @firstName, @lastName, @email, @mobileNo, @password)";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
+                    command.Parameters.AddWithValue("@userId", user.UserId);
+                    command.Parameters.AddWithValue("@firstName", user.FirstName);
+                    command.Parameters.AddWithValue("@lastName", user.LastName);
+                    command.Parameters.AddWithValue("@email", user.Email);
+                    command.Parameters.AddWithValue("@mobileNo", user.MobileNo);
+                    command.Parameters.AddWithValue("@password", user.Password);
 
                     //opening sql connection
                     connection.Open();
-
-                    //sql code to insert into the table
-                    connection.
-
-
+                    command.ExecuteNonQuery();
                     //close sql connetion
-                    connection.Close();
+                    //connection.Close();
 
                 }
             }
