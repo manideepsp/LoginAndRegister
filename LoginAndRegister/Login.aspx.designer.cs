@@ -24,22 +24,22 @@ namespace LoginAndRegister
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// userNameLogin control.
+        /// userName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox userNameLogin;
+        protected global::System.Web.UI.WebControls.TextBox userName;
 
         /// <summary>
-        /// passwordLogin control.
+        /// password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwordLogin;
+        protected global::System.Web.UI.WebControls.TextBox password;
 
         /// <summary>
         /// loginButton control.

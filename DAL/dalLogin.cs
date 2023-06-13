@@ -1,37 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
-namespace BLL
+namespace DAL
 {
-    public class UserBo
+    public class dalLogin
     {
-        private string _UserName = "";
-        private string _Password = "";
+        private string connectionString;
 
-        public string UserName
+        public dalLogin()
         {
-            get
-            {
-                return _UserName;
-            }
-            set
-            {
-                _UserName = value;
-            }
+            // Retrieve the connection string from the web.config file
+            connectionString = ConfigurationManager.ConnectionStrings["LoginRegister"].ToString();
         }
-        public string Password
+        public DataSet IsValid(string userName, string password)
         {
-            get
-            {
-                return _Password;
-            }
-            set
-            {
-                _Password = value;
-            }
+            string query = "Select * from user_info where userName='"+userName+"' and '"+password+"'";
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(query, con);
+            DataSet ds = new DataSet();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(ds);
+            return ds;
         }
     }
 }

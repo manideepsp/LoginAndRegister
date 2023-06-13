@@ -3,14 +3,14 @@ using System.Data.SqlClient;
 
 namespace DAL
 {
-    public class dalRegistration
+    public class dalRegistrationForm
     {
         private string connectionString;
 
-        public dalRegistration()
+        public dalRegistrationForm()
         {
             // Retrieve the connection string from the web.config file
-            connectionString = ConfigurationManager.ConnectionStrings["LoginRegister"].ConnectionString;
+            connectionString = ConfigurationManager.ConnectionStrings["LoginRegister"].ToString();
         }
         public void Register(User user)
         {

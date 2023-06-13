@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Login</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -13,21 +13,17 @@
                 <tr>
                     <asp:Label runat="server" Text="user name"></asp:Label>
                 </tr>
-                <br />
                 <tr>
-                    <asp:TextBox ID="userNameLogin" runat="server"></asp:TextBox>
-                <br />
+                    <asp:TextBox ID="userName" runat="server" OnTextChanged="userNameLogin_TextChanged"></asp:TextBox>
                 </tr>
                 <tr>
                     <asp:Label runat="server" Text="password"></asp:Label>
-                <br />
                 </tr>
                 <tr>
-                    <asp:TextBox ID="passwordLogin" TextMode="Password" runat="server"></asp:TextBox>
-                <br/>
+                    <asp:TextBox ID="password" TextMode="Password" runat="server"></asp:TextBox>
                 </tr>
                 <tr>
-                    <asp:Button ID="loginButton" runat="server" Text="Login"></asp:Button>
+                    <asp:Button ID="loginButton" runat="server" Text="Login" OnClick="loginButton_Click"></asp:Button>
                 </tr>
             </table>
         </div>

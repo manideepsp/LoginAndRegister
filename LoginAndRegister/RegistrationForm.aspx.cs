@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -15,16 +16,14 @@ namespace LoginAndRegister
         protected void Page_Load(object sender, EventArgs e)
         {
         }
-        protected void registrationFormSubmitButton_Click(object sender, EventArgs e)
+
+        protected void RegistrationFormSubmitButton_Click(object sender, EventArgs e)
         {
-            string userName = userNameText.Text;
-            string firstName = firstNameText.Text;
-            string lastName = lastNameText.Text;
-            string password = passwordText.Text;
-            string confirmPassword = confirmPasswordText.Text;
-            string gender = genderRadioButton.Text;
-            string email = emailText.Text;
-            string mobile = mobileNoText.Text;
+            UserObjects obj = new UserObjects();
+
+            obj.userId = UserName.Text;
+            obj.mobileNo = MobileNo.Text;
+
         }
     }
 }

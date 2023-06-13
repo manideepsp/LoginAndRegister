@@ -6,5 +6,7 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    
+    internal class bllRegisterationForm
+    {
+    }
 }
