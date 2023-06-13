@@ -18,20 +18,25 @@ namespace DAL
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                try
+                string query = @"INSERT INTO user_info (userId, firstName, lastName, email, mobileNo, password)
+                             VALUES (@userId, @firstName, @lastName, @email, @mobileNo, @password)";
+                using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    //opening sql connection
-                    connection.Open();
+                    try
+                    {
+                        //opening sql connection
+                        connection.Open();
 
-                    //sql code to insert into the table
-                    
+                        //sql code to insert into the table
+                        connection.
 
 
-                    //close sql connetion
-                    connection.Close();
+                        //close sql connetion
+                        connection.Close();
 
+                    }
+                    catch (Exception ex) { }
                 }
-                catch (Exception ex) { }
             }
         }
     }
