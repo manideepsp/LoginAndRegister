@@ -1,7 +1,5 @@
-﻿using System.Data.Common;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Data.SqlClient;
-using System.Collections.Generic;
 
 namespace DAL
 {
@@ -22,20 +20,17 @@ namespace DAL
                              VALUES (@userId, @firstName, @lastName, @email, @mobileNo, @password)";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    try
-                    {
-                        //opening sql connection
-                        connection.Open();
 
-                        //sql code to insert into the table
-                        connection.
+                    //opening sql connection
+                    connection.Open();
+
+                    //sql code to insert into the table
+                    connection.
 
 
-                        //close sql connetion
-                        connection.Close();
+                    //close sql connetion
+                    connection.Close();
 
-                    }
-                    catch (Exception ex) { }
                 }
             }
         }
