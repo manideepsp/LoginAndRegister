@@ -11,7 +11,7 @@ namespace LoginAndRegister
 {
 
 
-    public partial class loginPage
+    public partial class MainPage
     {
 
         /// <summary>

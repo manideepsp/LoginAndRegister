@@ -6,11 +6,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using bllRegistration;
 
-namespace LoginAndRegister.Pages.registrationForm
+
+namespace LoginAndRegister
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class RegistrationForm : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

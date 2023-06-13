@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LoginAndRegister</RootNamespace>
     <AssemblyName>LoginAndRegister</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44319</IISExpressSSLPort>
@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,22 +45,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -67,42 +67,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pages\aspx\forgotPassword.aspx" />
-    <Content Include="Pages\aspx\login.aspx" />
-    <Content Include="Pages\aspx\register.aspx" />
-    <Content Include="Pages\html\index.html" />
-    <Content Include="Pages\registrationForm\registration.aspx" />
+    <Content Include="RegistrationForm.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebUserControl1.ascx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\aspx\forgotPassword.aspx.cs">
-      <DependentUpon>forgotPassword.aspx</DependentUpon>
+    <Compile Include="RegistrationForm.aspx.cs">
+      <DependentUpon>RegistrationForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\aspx\forgotPassword.aspx.designer.cs">
-      <DependentUpon>forgotPassword.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\aspx\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\aspx\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\aspx\register.aspx.cs">
-      <DependentUpon>register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\aspx\register.aspx.designer.cs">
-      <DependentUpon>register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\registrationForm\registration.aspx.cs">
-      <DependentUpon>registration.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\registrationForm\registration.aspx.designer.cs">
-      <DependentUpon>registration.aspx</DependentUpon>
+    <Compile Include="RegistrationForm.aspx.designer.cs">
+      <DependentUpon>RegistrationForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebUserControl1.ascx.cs">
@@ -124,7 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{5b2e6a5d-b1e4-4ae7-afac-64fd439c66a1}</Project>
+      <Project>{69b680b6-784c-4f60-8216-47171105333a}</Project>
       <Name>BLL</Name>
     </ProjectReference>
   </ItemGroup>

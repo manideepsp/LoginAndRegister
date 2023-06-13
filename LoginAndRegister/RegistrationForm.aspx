@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="RegistraionForm.aspx.cs" Inherits="RegistraionForm" %>  
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="RegistrationForm.aspx.cs" Inherits="LoginAndRegister.RegistrationForm" %>  
   
 <!DOCTYPE html>  
   

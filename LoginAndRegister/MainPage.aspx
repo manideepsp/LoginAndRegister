@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="LoginAndRegister.loginPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MainPage.aspx.cs" Inherits="LoginAndRegister.MainPage" %>
 
 <!DOCTYPE html>
 
@@ -13,4 +13,3 @@
     </form>
 </body>
 </html>
-<asp:Login runat="server"></asp:Login>

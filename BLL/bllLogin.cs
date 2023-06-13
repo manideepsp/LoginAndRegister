@@ -12,7 +12,7 @@ namespace BLL
         private string _Password = "";
 
         public string UserName
-        {
+        { 
             get
             {
                 return _UserName;

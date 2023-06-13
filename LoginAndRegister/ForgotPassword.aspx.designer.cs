@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LoginAndRegister.Pages
+namespace LoginAndRegister
 {
 
 
-    public partial class registerPage
+    public partial class ForgotPassword
     {
 
         /// <summary>
